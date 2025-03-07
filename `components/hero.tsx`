@@ -1,0 +1,44 @@
+import { Check } from "lucide-react"
+import Link from "next/link"
+
+import { Button } from "@/components/ui/button"
+
+export default function Hero() {
+  return (
+    <div className="bg-gradient-to-b from-sky-50 to-white py-16 text-center">
+      <div className="container mx-auto px-4">
+        <h1 className="mb-4 text-4xl font-bold tracking-tight text-navy-900 md:text-5xl lg:text-6xl">
+          Module De Réservation Pour Taxi & VTC
+        </h1>
+        <h2 className="mb-8 text-2xl font-medium text-navy-800 md:text-3xl">
+          Qui Convertit Vos Visiteurs En Réservation En Ligne
+        </h2>
+        <p className="mb-8 text-lg italic text-navy-700">Prenez des réservations en ligne avec ou sans site Internet</p>
+
+        <Button size="lg" className="mb-12 bg-navy-900 px-8 py-6 text-lg hover:bg-navy-800">
+          <Link href="#booking-form">Commencez maintenant !</Link>
+        </Button>
+
+        <div className="mx-auto mb-8 flex max-w-3xl flex-col gap-2">
+          <div className="flex items-center justify-center gap-2">
+            <Check className="h-5 w-5 text-green-500" />
+            <span>Sans Engagement</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Check className="h-5 w-5 text-green-500" />
+            <span>Compatible WordPress, Wix, Squarespace, etc.</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Check className="h-5 w-5 text-green-500" />
+            <span>14 Jours Satisfait ou Remboursé</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Check className="h-5 w-5 text-green-500" />
+            <span>RDV gratuit avec un technicien pour prise en main de l&apos;outil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
